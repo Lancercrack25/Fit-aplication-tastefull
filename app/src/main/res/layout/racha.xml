@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Racha">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#DB6804"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbutton0"
+            android:layout_width="66dp"
+            android:layout_height="75dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="perfil"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtBienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Mis rachas"
+            android:textColor="@color/white"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRacha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Racha: 0 días"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/circlesLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView android:id="@+id/circle1" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_background_inactive" android:gravity="center" android:text="1" android:textColor="@color/white" android:textStyle="bold" android:layout_margin="4dp"/>
+        <TextView android:id="@+id/circle2" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_background_inactive" android:gravity="center" android:text="2" android:textColor="@color/white" android:textStyle="bold" android:layout_margin="4dp"/>
+        <TextView android:id="@+id/circle3" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_background_inactive" android:gravity="center" android:text="3" android:textColor="@color/white" android:textStyle="bold" android:layout_margin="4dp"/>
+        <TextView android:id="@+id/circle4" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_background_inactive" android:gravity="center" android:text="4" android:textColor="@color/white" android:textStyle="bold" android:layout_margin="4dp"/>
+        <TextView android:id="@+id/circle5" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_background_inactive" android:gravity="center" android:text="5" android:textColor="@color/white" android:textStyle="bold" android:layout_margin="4dp"/>
+        <TextView android:id="@+id/circle6" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_background_inactive" android:gravity="center" android:text="6" android:textColor="@color/white" android:textStyle="bold" android:layout_margin="4dp"/>
+        <TextView android:id="@+id/circle7" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_background_inactive" android:gravity="center" android:text="7" android:textColor="@color/white" android:textStyle="bold" android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/statsContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/circlesLayout"
+        app:layout_constraintBottom_toTopOf="@id/btnCumpliMeta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mis Estadísticas"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvSemanasNumero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp"
+                        android:textStyle="bold"
+                        android:textColor="#DB6804" />
+
+                    <TextView
+                        android:id="@+id/tvSemanasLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semanas Completadas"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvMesesNumero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp"
+                        android:textStyle="bold"
+                        android:textColor="#DB6804" />
+
+                    <TextView
+                        android:id="@+id/tvMesesLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meses Completados"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvAnosNumero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="48sp"
+                        android:textStyle="bold"
+                        android:textColor="#DB6804" />
+
+                    <TextView
+                        android:id="@+id/tvAnosLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Años Completados"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnCumpliMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFA500"
+        android:padding="12dp"
+        android:text="Cumpli mi meta"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton android:id="@+id/imgbutton1" android:layout_width="48dp" android:layout_height="48dp" android:background="@android:color/transparent" android:padding="8dp" android:scaleType="centerInside" android:src="@drawable/icono1" android:contentDescription="Comida" />
+        <ImageButton android:id="@+id/imgbutton2" android:layout_width="48dp" android:layout_height="48dp" android:background="@android:color/transparent" android:padding="8dp" android:scaleType="centerInside" android:src="@drawable/icon2" android:contentDescription="Comida" />
+        <ImageButton android:id="@+id/imgbutton6" android:layout_width="48dp" android:layout_height="48dp" android:background="@android:color/transparent" android:padding="8dp" android:scaleType="centerInside" android:src="@drawable/icono6" android:contentDescription="Comida" />
+        <ImageButton android:id="@+id/imgbutton3" android:layout_width="48dp" android:layout_height="48dp" android:background="@android:color/transparent" android:padding="8dp" android:scaleType="centerInside" android:src="@drawable/icono3" android:contentDescription="Estadísticas" />
+        <ImageButton android:id="@+id/imgbutton4" android:layout_width="48dp" android:layout_height="48dp" android:background="@android:color/transparent" android:padding="8dp" android:scaleType="centerInside" android:src="@drawable/icono4" android:contentDescription="Logros" />
+        <ImageButton android:id="@+id/imgbutton5" android:layout_width="48dp" android:layout_height="48dp" android:background="@android:color/transparent" android:padding="8dp" android:scaleType="centerInside" android:src="@drawable/icono5" android:contentDescription="Salir" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

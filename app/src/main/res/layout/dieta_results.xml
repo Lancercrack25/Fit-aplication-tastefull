@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#F2F2F2"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Título general -->
+        <TextView
+            android:id="@+id/tvResumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Resultados"
+            android:textColor="#1A1A1A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Bloque de Alimentación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Alimentación"
+            android:textColor="#3366FF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDieta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#E3E9FF"
+            android:backgroundTint="#C7D5FF"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:text="Desayuno: Avena cocida con leche entera, nueces, plátano y huevo.\n\nComida: Pechuga de pollo con arroz y frijoles.\n\nCena: Salmón al horno con papas y brócoli."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <!-- Bloque de Ejercicios -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ejercicios"
+            android:textColor="#3366FF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRutina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="#E3E9FF"
+            android:backgroundTint="#C7D5FF"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:text="Ejercicio aeróbico o cardio 150–300 min/semana de intensidad moderada. También puedes alternar con entrenamiento de fuerza 3–4 días por semana."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnDescargar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#8BC34A"
+            android:elevation="6dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="10dp"
+            android:radius="20dp"
+            android:stateListAnimator="@null"
+            android:text="Descargar rutina"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:background="#A8ABA4"
+            app:srcCompat="@android:drawable/stat_sys_download" />
+
+    </LinearLayout>
+</ScrollView>

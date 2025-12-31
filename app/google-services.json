@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "33131535703",
+    "project_id": "fat-app-a94f8",
+    "storage_bucket": "fat-app-a94f8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33131535703:android:0a98f25d8b99c44ef73212",
+        "android_client_info": {
+          "package_name": "com.example.fat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0_ktmH0WCWpCNUaBVcpMZPS16J6tFW_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Actividad Física"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Tipo de actividad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de actividad:"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:spinnerMode="dropdown" />
+
+        <!-- Intensidad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intensidad:"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <Spinner
+            android:id="@+id/spinnerIntensidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:spinnerMode="dropdown" />
+
+        <!-- Duración k-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duración (minutos):"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <EditText
+            android:id="@+id/editDuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="22sp"
+            android:hint="Ejemplo: 45" />
+
+        <EditText
+            android:id="@+id/editSueno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horas de sueño"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp"/>
+
+
+        <!-- Calorías -->
+        <TextView
+            android:id="@+id/txtCalorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Calorías quemadas: 0 kcal"
+            android:textColor="#E53935"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Ubicación GPS -->
+        <TextView
+            android:id="@+id/txtUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Ubicación no detectada aún"
+            android:textColor="#555"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Botones -->
+        <Button
+            android:id="@+id/btnRegistrarManual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Actividad Manual"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnRegistrarGPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Actividad con GPS"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

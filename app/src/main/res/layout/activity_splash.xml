@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    tools:context=".SplashActivity">
+
+    <!-- Imagen 1: Visible inicialmente -->
+<ImageView
+android:id="@+id/splash_imagen_1"
+android:layout_width="300dp"
+android:layout_height="300dp"
+android:layout_gravity="center"
+android:contentDescription="Logo inicial de la aplicación"
+android:scaleType="fitCenter"
+android:src="@drawable/fat_icon" />
+
+    <!-- Imagen 2: Invisible inicialmente (alpha=0) -->
+<ImageView
+android:id="@+id/splash_imagen_2"
+android:layout_width="300dp"
+android:layout_height="300dp"
+android:layout_gravity="center"
+android:alpha="0"
+android:contentDescription="Logo secundario de la aplicación"
+android:scaleType="fitCenter"
+android:src="@drawable/logo_fat2" />
+
+    </FrameLayout>

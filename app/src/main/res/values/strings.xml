@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FAT_APP</string>
+
+    <string-array name="tipo_actividad">
+        <item>Correr</item>
+        <item>Caminata</item>
+        <item>Bicicleta</item>
+        <item>Natación</item>
+        <item>Gimnasio</item>
+    </string-array>
+
+    <string-array name="intensidad_actividad">
+        <item>Baja</item>
+        <item>Media</item>
+        <item>Alta</item>
+    </string-array>
+
+</resources>
