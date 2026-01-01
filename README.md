@@ -1,205 +1,210 @@
-# 🏃‍♂️ Fit Application – Tastefull
+<div align="center">
 
-**Fit Application – Tastefull** es una aplicación móvil Android enfocada en el bienestar físico y nutricional del usuario. Permite llevar un control integral de la actividad física, alimentación, progreso corporal y motivación diaria, además de ofrecer recomendaciones personalizadas de dieta y planes premium.
+<h1>🥗 Fit Application – Tastefull</h1>
+<p>Aplicación móvil Android enfocada en bienestar físico y nutricional</p>
+<br>
 
-El proyecto fue desarrollado en **Android Studio**, utilizando **Material Design**, base de datos local y consumo de APIs externas para información nutricional confiable.
+<img 
+  src="https://github.com/user-attachments/assets/6b8e2e98-a4d4-4739-8c8e-81264674a1de"
+  alt="Fit Application"
+  width="400"
+/>
+<br>
+<hr width="60%">
+</div>
 
-## 🚀 Características principales
+<section>
 
-- Autenticación de usuarios (login y registro)
-- Registro de actividad física y horas de sueño
-- Control de alimentación y macronutrientes
-- Recomendaciones personalizadas de dieta
-- Sistema motivacional de rachas
-- Planes premium de suscripción
-- Diseño moderno y consistente con Material Design
+<p>Fit Application – Tastefull es una aplicación móvil desarrollada para Android que permite al usuario llevar un control integral de su salud física y nutricional.  
+Integra seguimiento de actividad física, control de alimentación, progreso corporal, motivación diaria y recomendaciones personalizadas de dieta, incluyendo planes premium por suscripción.
+</p>
+<p >
+El proyecto fue desarrollado en <b>Android Studio</b>, utilizando <b>Material Design</b>, base de datos local y consumo de <b>APIs externas confiables</b> para información nutricional.
+</p>
 
-## 🎬 Splash Screen
+</section>
 
-La aplicación inicia con una pantalla **Splash Screen** que muestra una animación de bienvenida mientras el sistema se prepara para su ejecución.
+<hr>
 
-### Funcionalidades
-- Animación tipo *fade* entre dos imágenes centrales
-- Transición visual fluida y profesional
-- Modo inmersivo (sin barra de estado ni navegación)
-- Redirección automática a la pantalla de inicio de sesión
+<!-- ===================== CARACTERÍSTICAS ===================== -->
+<section>
 
-Esta pantalla mejora la experiencia inicial y refuerza la identidad visual de la aplicación.
+<h2>🚀 Características Principales</h2>
 
-## 🔐 Inicio de Sesión
+<ul>
+  <li>Autenticación de usuarios (inicio de sesión y registro)</li>
+  <li>Seguimiento de actividad física y horas de sueño</li>
+  <li>Control nutricional y macronutrientes</li>
+  <li>Recomendaciones personalizadas de dieta</li>
+  <li>Sistema de rachas motivacionales</li>
+  <li>Planes premium mediante suscripción</li>
+  <li>Interfaz moderna basada en Material Design</li>
+</ul>
 
-Permite al usuario acceder a su cuenta dentro de la aplicación.
+</section>
 
-### Funciones
-- Campo de usuario y contraseña
-- Opción para mostrar u ocultar contraseña
-- Validación de campos vacíos
-- Verificación de credenciales en la base de datos
-- Mensajes de error o confirmación
-- Enlace a la pantalla de registro
+<hr>
 
-## 📝 Registro de Usuario
+<!-- ===================== SPLASH ===================== -->
+<section>
 
-Permite crear una nueva cuenta y recopilar información esencial para personalizar la experiencia del usuario.
+<h2>🌟 Splash Screen</h2>
 
-### Datos solicitados
-- Nombre completo  
-- Correo electrónico  
-- Nombre de usuario  
-- Peso inicial  
-- Edad  
-- Sexo  
-- Estatura  
-- Contraseña  
-- Confirmación de contraseña  
+<p>
+Pantalla inicial con animación de bienvenida que se muestra mientras la aplicación se prepara para su ejecución.
+</p>
 
-### Validaciones
-- Campos obligatorios
-- Coincidencia de contraseñas
-- Verificación de usuario duplicado
+<ul>
+  <li>Animación tipo <i>fade</i> entre imágenes</li>
+  <li>Transición fluida y profesional</li>
+  <li>Modo inmersivo (sin barras del sistema)</li>
+  <li>Redirección automática al inicio de sesión</li>
+</ul>
 
-Al finalizar el registro, el usuario es redirigido al inicio de sesión.
+</section>
 
-## 🏠 Menú Principal
+<hr>
 
-Funciona como el centro de control del usuario.
+<!-- ===================== AUTH ===================== -->
+<section>
 
-### Contenido
-- Mensaje de bienvenida
-- Acceso destacado a Planes Premium
-- Tarjetas informativas:
-  - Pasos diarios
-  - Peso inicial
-  - Horas de sueño
-- Botón principal **“¡Iniciar Actividad!”**
-- Acceso rápido a contacto profesional
+<h2>🔐 Autenticación</h2>
 
-### Barra de navegación inferior
-- Inicio
-- Alimentación
-- Dieta
-- Progreso
-- Rachas
-- Perfil
-- Cerrar sesión
+<h3>Inicio de Sesión</h3>
+<ul>
+  <li>Campos de usuario y contraseña</li>
+  <li>Visualización opcional de contraseña</li>
+  <li>Validación de datos</li>
+  <li>Verificación en base de datos</li>
+  <li>Mensajes de confirmación y error</li>
+</ul>
 
-## 👤 Perfil
+<h3>Registro de Usuario</h3>
+<ul>
+  <li>Datos personales y corporales</li>
+  <li>Validación de campos obligatorios</li>
+  <li>Confirmación de contraseña</li>
+  <li>Prevención de usuarios duplicados</li>
+</ul>
 
-Permite visualizar y gestionar la información personal del usuario.
+</section>
 
-### Características
-- Imagen de perfil circular
-- Nombre de usuario destacado
-- Tarjeta con información personal organizada
-- Diseño claro y coherente con la aplicación
-  
-## 🏋️ Registro de Actividad Física
+<hr>
 
-Permite registrar ejercicios, horas de sueño y ubicación.
+<!-- ===================== MENU ===================== -->
+<section>
 
-### Funciones
-- Selección de tipo de actividad e intensidad
-- Ingreso de duración y horas de sueño
-- Cálculo automático de calorías quemadas
-- Registro mediante GPS
-- Almacenamiento en base de datos:
-  - Actividad
-  - Intensidad
-  - Duración
-  - Calorías
-  - Ubicación
-  - Sueño
+<h2>🏠 Menú Principal</h2>
 
-## 🍎 Registro de Alimentos
+<ul>
+  <li>Mensaje de bienvenida personalizado</li>
+  <li>Acceso destacado a planes premium</li>
+  <li>Tarjetas informativas (pasos, peso, sueño)</li>
+  <li>Botón principal <b>“¡Iniciar Actividad!”</b></li>
+  <li>Acceso rápido a contacto profesional</li>
+</ul>
 
-Permite llevar un control detallado de la ingesta diaria.
+<p><b>Barra de navegación inferior:</b></p>
+<p>Inicio · Alimentación · Dieta · Progreso · Rachas · Perfil · Cerrar sesión</p>
 
-### Funcionalidades
-- Búsqueda con autocompletado
-- Consumo de la API oficial USDA
-- Información nutricional por cada 100g:
-  - Calorías
-  - Proteínas
-  - Grasas
-  - Carbohidratos
-- Registro por gramos consumidos
-- Lista diaria editable de alimentos
-- Edición y eliminación de registros
+</section>
 
-## 🥗 Recomendador de Dieta
+<hr>
 
-Ayuda al usuario a definir su objetivo corporal.
+<!-- ===================== ACTIVIDAD ===================== -->
+<section>
 
-### Opciones
-- Subir de peso
-- Bajar de peso
-- Quemar grasa
-- Mejorar energía
-- Tonificar músculos
+<h2>🏃 Registro de Actividad Física</h2>
 
-El sistema utiliza el peso actual y el peso deseado para generar recomendaciones personalizadas.
+<ul>
+  <li>Selección de tipo e intensidad de actividad</li>
+  <li>Registro de duración y horas de sueño</li>
+  <li>Cálculo automático de calorías</li>
+  <li>Registro de ubicación mediante GPS</li>
+  <li>Almacenamiento estructurado en base de datos</li>
+</ul>
 
-## 📋 Dieta Recomendada
+</section>
 
-Presenta una guía alimenticia personalizada basada en el objetivo seleccionado.
+<hr>
 
-### Incluye
-- Tipo de dieta sugerida
-- Alimentos recomendados
-- Frecuencia y horarios de comida
-- Porciones aproximadas
-- Consejos complementarios
+<!-- ===================== NUTRICIÓN ===================== -->
+<section>
 
-## 📊 Resumen del Día
+<h2>🍎 Registro de Alimentos</h2>
 
-Panel nutricional que muestra el progreso diario del usuario en tiempo real.
+<ul>
+  <li>Búsqueda inteligente con autocompletado</li>
+  <li>Integración con la API oficial USDA</li>
+  <li>Información nutricional detallada</li>
+  <li>Registro por gramos consumidos</li>
+  <li>Edición y eliminación de registros</li>
+</ul>
 
-### Funciones
-- Cálculo automático de metas diarias
-- Total de calorías y macronutrientes consumidos
-- Barras de progreso dinámicas
-- Valores claros y comprensibles
-- Integración con la navegación principal
+</section>
 
-## 🔥 Rachas
+<hr>
 
-Sistema motivacional enfocado en la constancia del usuario.
+<!-- ===================== DIETAS ===================== -->
+<section>
 
-### Funcionamiento
-- Botón **“Cumplí mi meta”**
-- Registro diario automático
-- Incremento o reinicio de la racha
-- Indicadores visuales semanales
-- Estadísticas acumuladas:
-  - Semanas
-  - Meses
-  - Años
+<h2>🎯 Recomendador de Dieta</h2>
 
-## 💳 Pagos y Planes
+<ul>
+  <li>Objetivos: subir peso, bajar peso, quemar grasa</li>
+  <li>Personalización según peso actual y objetivo</li>
+  <li>Guía alimenticia adaptada al usuario</li>
+</ul>
 
-Permite acceder a funciones premium mediante suscripción.
+</section>
 
-### Planes disponibles
-- Premium
-- Business
+<hr>
 
-### Flujo
-1. Selección del plan
-2. Visualización del precio
-3. Confirmación
-4. Redirección al proceso de pago
+<!-- ===================== RACHAS ===================== -->
+<section>
 
-## 🛠 Tecnologías utilizadas
+<h2>🔥 Rachas</h2>
 
-- Android Studio
-- Java / Kotlin
-- Material Design
-- SQLite
-- API USDA
-- GPS
-- Gradle (Kotlin DSL)
+<ul>
+  <li>Sistema de motivación diaria</li>
+  <li>Registro automático de cumplimiento</li>
+  <li>Indicadores visuales de progreso</li>
+  <li>Estadísticas semanales, mensuales y anuales</li>
+</ul>
 
-## 📌 Estado del proyecto
- 
-Aplicación funcional con múltiples módulos  
-Enfocada en experiencia de usuario y diseño moderno
+</section>
+
+<hr>
+
+<!-- ===================== PAGOS ===================== -->
+<section>
+
+<h2>💳 Pagos y Planes</h2>
+
+<ul>
+  <li>Planes disponibles: <b>Premium</b> y <b>Business</b></li>
+  <li>Selección y confirmación de plan</li>
+  <li>Redirección al proceso de pago</li>
+</ul>
+
+</section>
+
+<hr>
+
+<!-- ===================== TECNOLOGÍAS ===================== -->
+<section>
+
+<h2>🛠 Tecnologías Utilizadas</h2>
+
+<ul>
+  <li>Android Studio</li>
+  <li>Java / Kotlin</li>
+  <li>Material Design</li>
+  <li>SQLite</li>
+  <li>API USDA</li>
+  <li>GPS</li>
+  <li>Gradle (Kotlin DSL)</li>
+</ul>
+
+</section>
+<hr>
